@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // creat array.
+        let arr = [];
+        let lengthArr = prompt('input lenght of Array : ');
+        let cnt = 0;
+        for (let i = 0; i < lengthArr; i++) {
+            arr[i] = prompt('enter value of element ' + i);
+        }
+        console.log(arr);
+        for (let j = 0; j < lengthArr; j++) {
+            if (Number.isInteger(parseInt(arr[j]))) {
+                cnt += 1;
+            }
+        }
+        document.write('Number of digits in array is: ' + cnt);
+
+        // let a=[2,'44','gdsgs',5,'yty0'];
+        // let cnt=0;
+        // // let str='hkjh5235h2kh6';
+        // for(let i=0;i<a.length;i++){
+        //     if(Number.isInteger(a[i])){
+        //         cnt+=1;
+        //     }
+        // }
+        // document.write(cnt)
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //tạo array
+        let arr = [];
+        let lengthArr = +prompt('input length of array :');
+        for (let i = 0; i < lengthArr; i++) {
+            arr[i] = prompt('input value of elements ' + i + ' :');
+        }
+
+        document.write('The array was created :' + arr + '<br>');
+
+        document.write('Reverse array is :' + arr.reverse().join(''));//đảo ngược các phần tử sau đó nối các phần tử lại với nhau.
+    </script>
+</body>
+
+</html>
